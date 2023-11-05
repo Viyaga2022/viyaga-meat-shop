@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Deals() {
     return (
@@ -12,7 +13,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/2.jpg" alt="image" />
+                                    <Image src="images/product/2.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
@@ -46,7 +47,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/3.jpg" alt="image" />
+                                    <Image src="images/product/3.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
@@ -78,7 +79,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/1.jpg" alt="image" />
+                                    <Image src="images/product/1.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>

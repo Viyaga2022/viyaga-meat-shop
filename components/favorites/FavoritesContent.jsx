@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function FavoritesContent() {
     return (
@@ -26,7 +27,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         <a href="cart.html" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/1.jpg"
                                 alt="image"
@@ -62,7 +63,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         <a href="javascript:void(0);" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/2.jpg"
                                 alt="image"
@@ -98,7 +99,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         <a href="javascript:void(0);" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/3.jpg"
                                 alt="image"
@@ -134,7 +135,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         <a href="javascript:void(0);" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/4.jpg"
                                 alt="image"

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function CategoriesContent() {
   return (
@@ -8,7 +9,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/1.png" alt="image" />
+              <Image src="images/categore/1.png" alt="image" />
             </div>
             <span>Fish &amp; Seafood</span>
           </a>
@@ -16,7 +17,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/2.png" alt="image" />
+              <Image src="images/categore/2.png" alt="image" />
             </div>
             <span>Poultry</span>
           </a>
@@ -24,7 +25,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/3.png" alt="image" />
+              <Image src="images/categore/3.png" alt="image" />
             </div>
             <span>Ready to Cook</span>
           </a>
@@ -32,7 +33,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/4.png" alt="image" />
+              <Image src="images/categore/4.png" alt="image" />
             </div>
             <span>Combo Packs</span>
           </a>
@@ -40,7 +41,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/5.png" alt="image" />
+              <Image src="images/categore/5.png" alt="image" />
             </div>
             <span>Steaks &amp; Fillets</span>
           </a>
@@ -48,7 +49,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/6.png" alt="image" />
+              <Image src="images/categore/6.png" alt="image" />
             </div>
             <span>Mutton - Goat</span>
           </a>
@@ -56,7 +57,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/1.png" alt="image" />
+              <Image src="images/categore/1.png" alt="image" />
             </div>
             <span>Fish &amp; Seafood</span>
           </a>
@@ -64,7 +65,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/2.png" alt="image" />
+              <Image src="images/categore/2.png" alt="image" />
             </div>
             <span>Poultry</span>
           </a>
@@ -72,7 +73,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/3.png" alt="image" />
+              <Image src="images/categore/3.png" alt="image" />
             </div>
             <span>Ready to Cook</span>
           </a>
@@ -80,7 +81,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/4.png" alt="image" />
+              <Image src="images/categore/4.png" alt="image" />
             </div>
             <span>Combo Packs</span>
           </a>
@@ -88,7 +89,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/5.png" alt="image" />
+              <Image src="images/categore/5.png" alt="image" />
             </div>
             <span>Steaks &amp; Fillets</span>
           </a>
@@ -96,7 +97,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/6.png" alt="image" />
+              <Image src="images/categore/6.png" alt="image" />
             </div>
             <span>Mutton - Goat</span>
           </a>
@@ -104,7 +105,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/1.png" alt="image" />
+              <Image src="images/categore/1.png" alt="image" />
             </div>
             <span>Fish &amp; Seafood</span>
           </a>
@@ -112,7 +113,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/2.png" alt="image" />
+              <Image src="images/categore/2.png" alt="image" />
             </div>
             <span>Poultry</span>
           </a>
@@ -120,7 +121,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/3.png" alt="image" />
+              <Image src="images/categore/3.png" alt="image" />
             </div>
             <span>Ready to Cook</span>
           </a>
@@ -128,7 +129,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/4.png" alt="image" />
+              <Image src="images/categore/4.png" alt="image" />
             </div>
             <span>Combo Packs</span>
           </a>
@@ -136,7 +137,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/5.png" alt="image" />
+              <Image src="images/categore/5.png" alt="image" />
             </div>
             <span>Steaks &amp; Fillets</span>
           </a>
@@ -144,7 +145,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/6.png" alt="image" />
+              <Image src="images/categore/6.png" alt="image" />
             </div>
             <span>Mutton - Goat</span>
           </a>
@@ -152,7 +153,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/1.png" alt="image" />
+              <Image src="images/categore/1.png" alt="image" />
             </div>
             <span>Fish &amp; Seafood</span>
           </a>
@@ -160,7 +161,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/2.png" alt="image" />
+              <Image src="images/categore/2.png" alt="image" />
             </div>
             <span>Poultry</span>
           </a>
@@ -168,7 +169,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/3.png" alt="image" />
+              <Image src="images/categore/3.png" alt="image" />
             </div>
             <span>Ready to Cook</span>
           </a>
@@ -176,7 +177,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/4.png" alt="image" />
+              <Image src="images/categore/4.png" alt="image" />
             </div>
             <span>Combo Packs</span>
           </a>
@@ -184,7 +185,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/5.png" alt="image" />
+              <Image src="images/categore/5.png" alt="image" />
             </div>
             <span>Steaks &amp; Fillets</span>
           </a>
@@ -192,7 +193,7 @@ function CategoriesContent() {
         <div className="col-4 text-center">
           <a href="product-list.html">
             <div className="dz-media media-60">
-              <img src="images/categore/6.png" alt="image" />
+              <Image src="images/categore/6.png" alt="image" />
             </div>
             <span>Mutton - Goat</span>
           </a>

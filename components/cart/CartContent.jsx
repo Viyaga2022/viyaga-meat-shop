@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function CartContent() {
     return (
@@ -31,7 +32,7 @@ function CartContent() {
                     <div className="text-end">
                         {/* javascript:void(0); */}
                         <a href="#" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/1.jpg"
                                 alt="image"
@@ -75,7 +76,7 @@ function CartContent() {
                     <div className="text-end">
                         {/* javascript:void(0); */}
                         <a href="#" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/2.jpg"
                                 alt="image"
@@ -117,7 +118,7 @@ function CartContent() {
                     <div className="text-end">
                         {/* javascript:void(0); */}
                         <a href="#" className="dz-media media-100">
-                            <img
+                            <Image
                                 className="rounded-sm"
                                 src="images/product/3.jpg"
                                 alt="image"

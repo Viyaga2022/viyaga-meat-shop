@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function SideBar() {
     return (
@@ -7,7 +8,7 @@ function SideBar() {
             <div className="sidebar">
                 <div className="author-box">
                     <div className="dz-media">
-                        <img src="images/avatar/5.jpg" alt="author-image" />
+                        <Image src="images/avatar/5.jpg" alt="author-image" />
                     </div>
                     <div className="dz-info">
                         <h5 className="name">James Hawkins</h5>

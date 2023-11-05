@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function OnTrend() {
     return (
@@ -12,7 +13,7 @@ function OnTrend() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/5.jpg" alt="image" />
+                                    <Image src="images/product/5.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">1 pack</span>
@@ -43,7 +44,7 @@ function OnTrend() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/6.jpg" alt="image" />
+                                    <Image src="images/product/6.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">1 pack</span>
@@ -74,7 +75,7 @@ function OnTrend() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <img src="images/product/4.jpg" alt="image" />
+                                    <Image src="images/product/4.jpg" alt="image" />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">1 pack</span>

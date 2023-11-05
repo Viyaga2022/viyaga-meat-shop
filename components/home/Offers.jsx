@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Offers() {
     return (
@@ -11,17 +12,17 @@ function Offers() {
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <img src="images/banner/banner1.jpg" alt="/" />
+                                <Image src="images/banner/banner1.jpg" alt="/" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <img src="images/banner/banner2.jpg" alt="/" />
+                                <Image src="images/banner/banner2.jpg" alt="/" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <img src="images/banner/banner3.jpg" alt="/" />
+                                <Image src="images/banner/banner3.jpg" alt="/" />
                             </div>
                         </div>
                     </div>
