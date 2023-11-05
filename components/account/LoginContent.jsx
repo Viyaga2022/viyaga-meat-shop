@@ -11,7 +11,7 @@ const LoginContent = () => {
                     <div className="container">
                         <div className="section-head text-center">
                             <h2>Login Account</h2>
-                            <p>Welcome back you've been missed!</p>
+                            <p>Welcome back you&apos;ve been missed!</p>
                         </div>
                         <div className="account-area">
                             <form>
@@ -74,7 +74,7 @@ const LoginContent = () => {
                                     </a>
                                 </div>
                                 <a href="register" className="btn-link text-center">
-                                    Don’t have an account?
+                                    Don&apos;t have an account?
                                 </a>
                             </form>
                         </div>
