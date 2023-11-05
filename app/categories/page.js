@@ -8,7 +8,7 @@ function categories() {
     <>
         <HeadTitle title="Categories" cart="true" />
         <CategoriesContent />
-        <BottomTab />
+        <BottomTab categories="active" />
     </>
   )
 }

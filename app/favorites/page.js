@@ -8,7 +8,7 @@ function page() {
         <>
             <HeadTitle title="Favorites" cart="true" />
             <FavoritesContent />
-            <BottomTab />
+            <BottomTab favorites="active" />
         </>
     )
 }

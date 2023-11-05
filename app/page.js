@@ -19,7 +19,7 @@ export default function Home() {
                     <OnTrend />
                 </div>
             </div>
-            <BottomTab />
+            <BottomTab home="active" />
         </>
     )
 }

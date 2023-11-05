@@ -20,7 +20,7 @@ const page = () => {
                 </div>
             </div>
 
-            <BottomTab />
+            <BottomTab profile="active" />
         </>
     )
 }
