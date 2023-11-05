@@ -1,10 +1,10 @@
-import Header from '@/components/home/Header'
+import Header from '@/components/Header'
 import SideBar from '@/components/home/SideBar'
 import Categories from '@/components/home/Categories'
 import Offers from '@/components/home/Offers'
 import Deals from '@/components/home/Deals'
 import OnTrend from '@/components/home/OnTrend'
-import BottomTab from '@/components/home/BottomTab'
+import BottomTab from '@/components/BottomTab'
 
 export default function Home() {
     return (
