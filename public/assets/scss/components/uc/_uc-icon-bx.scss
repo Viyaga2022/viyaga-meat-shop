@@ -1,0 +1,98 @@
+//Icon Box ===
+.icon-box{
+	width: 45px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	svg{
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.icon-box-2{
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--border-color);
+	align-items: center;
+	display: flex;
+	border-radius: 8px;
+	justify-content: center;
+	svg{
+		width: 20px;
+		height: 20px;
+		path{
+			fill: #fff;
+		}
+	}
+}
+.icon-box-3{
+	width: 45px!important;
+	min-width: 45px!important;
+	height: 45px !important;
+	align-items: center;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.30);
+	border-radius: 50%;
+	justify-content: center;
+	svg{
+		width: 20px !important;
+		height: 20px !important;
+		path{
+			fill: #fff;
+		}
+	}
+	&.icon-sm{
+		width: 35px!important;
+		min-width: 35px!important;
+		height: 35px !important;
+		svg{
+			width: 16px !important;
+			height: 16px !important;
+		}
+		
+	}
+}
+
+.icon-box-4{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	width: 35px!important;
+	min-width: 35px!important;
+	height: 35px !important;
+	align-items: center;
+	display: flex;
+	background-color: var(--rgba-primary-1);
+	border-radius: 8px;
+	justify-content: center;
+	svg{
+		width: 20px !important;
+		height: 20px !important;
+		path{
+			fill: #fff;
+		}
+	}
+}
+
+.icon-box-5{
+	width: 45px!important;
+	min-width: 45px!important;
+	height: 45px !important;
+	align-items: center;
+	margin: auto;
+	display: flex;
+	background-color: var(--rgba-primary-5);
+	border-radius: 50%;
+	justify-content: center;
+	svg{
+		width: 20px !important;
+		height: 20px !important;
+		path{
+			fill: #fff;
+		}
+	}
+}

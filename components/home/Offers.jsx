@@ -1,0 +1,35 @@
+import React from 'react'
+
+function Offers() {
+    return (
+        <>
+            <div className="title-bar">
+                <span className="title mb-0">Offer for you</span>
+            </div>
+            <div className="swiper-btn-center-lr mt-0">
+                <div className="swiper meat-swiper">
+                    <div className="swiper-wrapper">
+                        <div className="swiper-slide">
+                            <div className="card add-banner2">
+                                <img src="images/banner/banner1.jpg" alt="/" />
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="card add-banner2">
+                                <img src="images/banner/banner2.jpg" alt="/" />
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="card add-banner2">
+                                <img src="images/banner/banner3.jpg" alt="/" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+
+    )
+}
+
+export default Offers

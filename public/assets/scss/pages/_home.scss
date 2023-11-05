@@ -1,0 +1,385 @@
+// Homepage ===
+
+/* banner */
+.offer-box{
+	margin-top: 130px!important;
+}
+
+.product-swiper,
+.meat-swiper{
+	.swiper-wrapper{
+		.swiper-slide{
+			width: 300px;
+			margin-left: 15px;
+			&:last-child{					
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+.product-swiper{
+	.swiper-wrapper{
+		.swiper-slide{
+			width: auto;
+			margin-bottom: 34px;
+		}
+	}
+}
+
+.catagore-bx{
+	a{
+		color: var(--title);
+	}
+	margin-bottom: 18px;
+	.dz-media{
+		margin: 0 auto;
+		img{
+			border-radius: 50%;
+		}
+	}
+}
+
+.location{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	.location-icon{
+		svg{
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+	}
+	.location-content{
+		flex: 1;
+		.title{
+			color: #fff;
+			font-weight: 600;
+			margin-bottom: 0px;
+		}
+		p{
+			color: #e1e1e1;
+			margin-bottom: 0;
+		}
+	}
+	&.style-2{
+		background-color: var(--bg-white);
+		.location-icon{
+			svg{
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+			}
+		}
+		.location-content{
+			flex: 1;
+			.title{
+				color: var(--primary);
+				font-weight: 600;
+				margin-bottom: 0px;
+			}
+			p{
+				color: var(--title);
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.search-box{
+	&.style-1{
+		margin-bottom: -35px;
+	}
+}
+
+.title-bar{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+	.title{
+		font-size: 16px;
+		font-weight: 600;
+		font-family: var(--font-family-title);
+	}
+    .dz-title{
+        font-weight: 500;        
+        margin-bottom: 0;
+    }
+}
+
+.swiper-btn-center-lr{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+//Heart Saved====
+.item-bookmark{
+	svg{
+		width: 24px;
+		height: 24px;
+	}
+	&.active{
+		svg{
+			path{
+				fill: #FF6464;
+				stroke: #FF6464;
+			}
+		}
+		&.icon-2{
+			background: #fff;			
+			svg{
+				path{
+					fill: #FF6464;
+					stroke: #FF6464;
+				}
+			}
+		}
+	}
+	&.icon-1{
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	&.icon-2{
+		width: 32px;
+		background: #ff6464;
+		height: 36px;
+		box-shadow: 4px 4px 20px -5px rgba(0, 0, 0, 0.70);
+		text-align: center;
+		line-height: 36px;
+		border-radius: 0 0 12px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		svg{
+			width: 20px;
+			height: 20px;
+			path{
+				fill: #fff;
+				stroke: #fff;
+			}
+		}
+	}
+	&.icon-3{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);	
+		background-color: var(--bg-white);
+		text-align: center;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 999;
+		bottom: -15px;
+		right: 15px;
+		svg{
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+.r-btn{
+	color: #7D8FAB!important;
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	z-index: 9;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	&:hover,
+	&:focus{
+		color:#7D8FAB;		
+	}
+}
+
+.timeline{
+	display: flex;
+	align-items: center;
+	li{
+		position: relative;
+		padding: 0 6px 0 0;
+		.saprete-circle{
+			width: 6px;
+			height: 6px;
+			background-color: #a5a0a0;
+			border-radius: 50%;
+		}
+	}
+}
+
+// LIKE-BUTTON ===
+.like-button{
+	position: relative;
+	font-size: 20px;
+	--xw:10px;
+	&:focus {
+		outline: 0;
+	}
+	&:before, 
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		width: 200%;
+		height: 100%;
+		left: -50%;
+		z-index: -1000;
+		transition: all ease-in-out 0.5s;
+		background-repeat: no-repeat;
+	}
+  
+	&:before{
+		display: none;
+		top: -35%;
+		background-image:  
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 20%, $pink 20%, transparent 30%),
+		radial-gradient(circle, $pink 20%, transparent 20%), 
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 10%, $pink 15%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%);
+		background-size: 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw));
+	}
+  
+	&:after{
+		display: none;
+		bottom: -25%;
+		background-image:  
+		radial-gradient(circle, $pink 20%, transparent 20%), 
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 10%, $pink 15%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%);
+		background-size: 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw));
+	}
+ 
+	&:active{
+		transform: scale(0.9);
+	}
+  
+	&.active{
+		&:before{
+			display: block;
+			animation: likeButton ease-in-out 0.75s forwards;
+		}
+		&:after{
+			display: block;
+			animation: likeButtonBottom ease-in-out 0.75s forwards;
+		}
+		.fa-heart:before{
+			font-weight: 700;
+			color:$pink;
+		}
+	}
+}
+@keyframes likeButton {
+	0%{
+		background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+	}
+    50% {
+		background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+	}
+	100% {
+		background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
+}
+@keyframes likeButtonBottom {
+	0%{
+		background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+	}	
+	50% {
+		background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+	100% {
+		background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
+}
+
+
+
+
+//PAYMENT CSS ====
+.mide-line{
+	width: 1px;
+	height: 10px;
+	background-color: #fff;
+	margin: 0 10px;
+}
+.payment-btn{
+	background-color: var(--primary);
+	padding: 15px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border-radius: var(--border-radius-base);
+	justify-content: space-between;
+	.total-price{
+		display: flex;
+		align-items: center;
+	}
+	.title{
+		color: #fff;
+		font-size: 16px;
+		font-weight: 500;
+	}	
+	svg{
+		width: 15px;
+		height: 15px;
+		path{
+			fill: #fff;
+		}
+	}
+	&:active,
+	&:hover{
+		color: #fff!important;
+		background-color: var(--primary)!important;
+	}
+}

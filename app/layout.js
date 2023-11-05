@@ -1,5 +1,11 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
+import Script from 'next/script'
+
+// Import Css Files
+import '../public/assets/css/style.css'
+import '../public/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css'
+import '../public/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css'
+import '../public/assets/vendor/swiper/swiper-bundle.min.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +17,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} suppressHydrationWarning={true} >
+        <Script src='assets/js/jquery.js' strategy="beforeInteractive" />
+        <Script src='assets/vendor/bootstrap/js/bootstrap.bundle.min.js' strategy="beforeInteractive" />
+        <Script src='assets/vendor/swiper/swiper-bundle.min.js' strategy="beforeInteractive" />
+        <Script src='assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js' strategy="lazyOnload" />
+        <Script src='assets/js/dz.carousel.js' strategy="lazyOnload" />
+        <Script src='assets/js/settings.js' strategy="lazyOnload" />
+        <Script src='assets/js/custom.js' strategy="lazyOnload" />
+        {children}
+      </body>
     </html>
   )
 }

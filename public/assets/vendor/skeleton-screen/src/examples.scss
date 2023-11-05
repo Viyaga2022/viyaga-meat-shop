@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+.search-ssc-lg {
+    display: none;
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media screen and (min-width: 769px) {
+        display: block;
+    }
+
+    .tag {
+        height: 30px;
+        width: 150px;
+        margin-right: 12px;
+        border-radius: 12px;
+    }
+}
+.search-ssc-sm {
+    display: none;
+    padding: 16px;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+    &__tags {
+        margin-bottom: -12px;
+    }
+
+    .tag {
+        height: 28px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    &__category {
+        height: 45px;
+        border-radius: 6px;
+    }
+}
