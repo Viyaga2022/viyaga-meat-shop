@@ -29,8 +29,10 @@ function FavoritesContent() {
                         <a href="cart.html" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/1.jpg"
+                                src="/images/product/1.jpg"
                                 alt="image"
+                                height={400} 
+                                width ={600}
                             />
                         </a>
                         <a
@@ -62,11 +64,14 @@ function FavoritesContent() {
                         </div>
                     </div>
                     <div className="text-end">
-                        <a href="javascript:void(0);" className="dz-media media-100">
+                        {/* javascript:void(0); */}
+                        <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/2.jpg"
+                                src="/images/product/2.jpg"
                                 alt="image"
+                                height={400} 
+                                width ={600}
                             />
                         </a>
                         <a
@@ -98,11 +103,14 @@ function FavoritesContent() {
                         </div>
                     </div>
                     <div className="text-end">
-                        <a href="javascript:void(0);" className="dz-media media-100">
+                        {/* javascript:void(0); */}
+                        <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/3.jpg"
+                                src="/images/product/3.jpg"
                                 alt="image"
+                                height={400} 
+                                width ={600}
                             />
                         </a>
                         <a
@@ -134,11 +142,14 @@ function FavoritesContent() {
                         </div>
                     </div>
                     <div className="text-end">
-                        <a href="javascript:void(0);" className="dz-media media-100">
+                        {/* javascript:void(0); */}
+                        <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/4.jpg"
+                                src="/images/product/4.jpg"
                                 alt="image"
+                                height={400} 
+                                width ={600}
                             />
                         </a>
                         <a

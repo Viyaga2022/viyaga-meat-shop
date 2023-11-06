@@ -1,0 +1,15 @@
+{
+  "background_color": "#fff",
+  "description": "Viyaga Meat For Fresh Meat",
+  "display": "fullscreen",
+  "icons": [
+	{
+	  "src": "/images/pwa150x150.png",
+	  "sizes": "150x150",
+	  "type": "image/png"
+	}
+  ],
+  "name": "VIYAGA Meat",
+  "short_name": "VMeat",
+  "start_url": "index.html"
+}

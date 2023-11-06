@@ -8,7 +8,7 @@ function SideBar() {
             <div className="sidebar">
                 <div className="author-box">
                     <div className="dz-media">
-                        <Image src="images/avatar/5.jpg" alt="author-image" />
+                        <Image src="/images/avatar/5.jpg" alt="author-image" height={150} width ={150} />
                     </div>
                     <div className="dz-info">
                         <h5 className="name">James Hawkins</h5>

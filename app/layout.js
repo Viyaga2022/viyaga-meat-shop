@@ -17,16 +17,34 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Meta */}
+        <meta name="theme-color" content="#009688" />
+        <meta name="author" content="VIYAGA" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="meat, chicken, mutton, fish, sea food, ui kit, multiple color, dark layout, meat shop"
+        />
+        <meta
+          property="og:image"
+          content="https://w3meat.dexignzone.com/xhtml/social-image.png"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        {/* PWA Version */}
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body className={inter.className} suppressHydrationWarning={true} >
-        <Script src='assets/js/jquery.js' strategy="beforeInteractive" />
-        <Script src='assets/vendor/bootstrap/js/bootstrap.bundle.min.js' strategy="beforeInteractive" />
-        <Script src='assets/vendor/swiper/swiper-bundle.min.js' strategy="beforeInteractive" />
-        <Script src='assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js' strategy="lazyOnload" />
-        <Script src='assets/js/dz.carousel.js' />
-        <Script src='assets/vendor/wow/dist/wow.min.js' strategy="lazyOnload"/>
-        <Script src='assets/js/settings.js' strategy="lazyOnload" />
-        <Script src='assets/js/custom.js' strategy="lazyOnload" />
+
         {children}
+        <Script src='/assets/js/jquery.js' strategy="beforeInteractive" />
+        <Script src='/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' strategy="beforeInteractive" />
+        <Script src='/assets/vendor/swiper/swiper-bundle.min.js' strategy="beforeInteractive" />
+        <Script src='/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js' strategy="lazyOnload" />
+        <Script src='/assets/js/dz.carousel.js' strategy="lazyOnload" />
+        <Script src='/assets/vendor/wow/dist/wow.min.js' strategy="lazyOnload" />
+        <Script src='/assets/js/settings.js' strategy="lazyOnload" />
+        <Script src='/assets/js/custom.js' strategy="lazyOnload" />
       </body>
     </html>
   )

@@ -4,7 +4,7 @@ const MainProfile = () => {
     return (
         <div className="main-profile">
             <div className="profile-image">
-                <img src="images/avatar/5.jpg" alt="profile-image" />
+                <img src="/images/avatar/5.jpg" alt="profile-image" />
             </div>
             <div className="profile-detail">
                 <h4 className="name">Robert Joe</h4>

@@ -12,17 +12,17 @@ function Offers() {
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <Image src="images/banner/banner1.jpg" alt="/" />
+                                <Image src="/images/banner/banner1.jpg" alt="/" height={197} width ={350} />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <Image src="images/banner/banner2.jpg" alt="/" />
+                                <Image src="/images/banner/banner2.jpg" alt="/" height={197} width ={350}/>
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="card add-banner2">
-                                <Image src="images/banner/banner3.jpg" alt="/" />
+                                <Image src="/images/banner/banner3.jpg" alt="/" height={197} width ={350} />
                             </div>
                         </div>
                     </div>

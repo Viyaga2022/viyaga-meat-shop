@@ -1,6 +1,6 @@
 import BottomTab from '@/components/BottomTab'
 import HeadTitle from '@/components/HeadTitle'
-import FavoritesContent from '@/components/favorites/FavoritesContent'
+import FavoritesContent from '@/components/profile/favorites/FavoritesContent'
 import React from 'react'
 
 function page() {

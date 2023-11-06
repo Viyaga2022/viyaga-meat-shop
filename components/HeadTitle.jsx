@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const CartIcon = () => {
     return (
         <a href="cart" className="notify-cart2">
@@ -36,7 +36,7 @@ const CartIcon = () => {
     )
 }
 
-function HeadTitle({ title, cart }) {
+function HeadTitle({ profile, title, cart }) {
     return (
         <header className="header">
             <div className="main-bar">
@@ -47,6 +47,12 @@ function HeadTitle({ title, cart }) {
                             <a href="#;" className="back-btn">
                                 <i className="fa-solid fa-arrow-left" />
                             </a>
+                            {profile
+                                ? (<div className="media me-3 media-35 rounded-circle">
+                                    <Image src="/images/avatar/4.jpg" alt="shop-name" width={100} height={100} />
+                                </div>)
+                                : null
+                            }
                             <h4 className="title mb-0 text-nowrap">{title}</h4>
                         </div>
                         <div className="mid-content"></div>

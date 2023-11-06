@@ -34,8 +34,10 @@ function CartContent() {
                         <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/1.jpg"
+                                src="/images/product/1.jpg"
                                 alt="image"
+                                height={400}
+                                width ={600}
                             />
                         </a>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">
@@ -78,8 +80,10 @@ function CartContent() {
                         <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/2.jpg"
+                                src="/images/product/2.jpg"
                                 alt="image"
+                                height={400}
+                                width ={600}
                             />
                         </a>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">
@@ -120,8 +124,10 @@ function CartContent() {
                         <a href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
-                                src="images/product/3.jpg"
+                                src="/images/product/3.jpg"
                                 alt="image"
+                                height={400}
+                                width ={600}
                             />
                         </a>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">

@@ -1,6 +1,6 @@
 import BottomTab from '@/components/BottomTab'
 import HeadTitle from '@/components/HeadTitle'
-import CategoriesContent from '@/components/categories/CategoriesContent'
+import CategoriesContent from '@/components/product/categories/CategoriesContent'
 import React from 'react'
 
 function categories() {

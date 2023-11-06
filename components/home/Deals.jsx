@@ -13,7 +13,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <Image src="images/product/2.jpg" alt="image" />
+                                    <Image src="/images/product/2.jpg" alt="image" height={400} width ={600}/>
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
@@ -47,7 +47,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <Image src="images/product/3.jpg" alt="image" />
+                                    <Image src="/images/product/3.jpg" alt="image" height={400} width ={600} />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
@@ -79,7 +79,7 @@ function Deals() {
                         <div className="swiper-slide">
                             <div className="card-item style-6">
                                 <a href="product-detail.html" className="dz-media">
-                                    <Image src="images/product/1.jpg" alt="image" />
+                                    <Image src="/images/product/1.jpg" alt="image" height={400} width ={600}/>
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
