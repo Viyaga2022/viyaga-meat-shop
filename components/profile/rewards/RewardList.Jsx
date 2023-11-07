@@ -1,18 +1,11 @@
 import React from 'react'
 
 const RewardList = () => {
+
     return (
         <>
-            <div className="title-bar mb-0">
+            <div style={{ paddingTop: 15 }} className="title-bar mb-40 mt-20">
                 <span className="title mb-0">History Rewards</span>
-                <select
-                    className="form-select dz-form-select style-2"
-                    aria-label="Default select example"
-                >
-                    <option selected="">Newest</option>
-                    <option value={1}>One</option>
-                    <option value={2}>Three</option>
-                </select>
             </div>
             <div className="rewards-list">
                 <ul>

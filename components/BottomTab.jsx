@@ -9,19 +9,19 @@ function BottomTab(props) {
                     <i className="fa-solid fa-house" />
                     <span>Home</span>
                 </a>
-                <a href="categories" className={`nav-link ${categories}`} >
+                <a href="/product/categories" className={`nav-link ${categories}`} >
                     <i className="fa-solid fa-box" />
                     <span>Categories</span>
                 </a>
-                <a href="favorites" className={`nav-link ${favorites}`}>
+                <a href="/profile/favorites" className={`nav-link ${favorites}`}>
                     <i className="fa-solid fa-heart" />
                     <span>Favorites</span>
                 </a>
-                <a href="cart" className={`nav-link ${cart}`}>
+                <a href="/product/cart" className={`nav-link ${cart}`}>
                     <i className="fa-solid fa-bag-shopping" />
                     <span>Cart</span>
                 </a>
-                <a href="profile" className={`nav-link ${profile}`}>
+                <a href="/profile" className={`nav-link ${profile}`}>
                     <i className="fa-solid fa-user" />
                     <span>Profile</span>
                 </a>

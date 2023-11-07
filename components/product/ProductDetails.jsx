@@ -102,7 +102,7 @@ const ProductDetails = () => {
             {/* FOOTER */}
             <div className="footer fixed">
                 <div className="container">
-                    <a href="/cart" className="btn btn-primary btn-block">
+                    <a href="/product/cart" className="btn btn-primary btn-block">
                         ADD TO CART
                     </a>
                 </div>

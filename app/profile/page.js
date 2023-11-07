@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
     return (
         <>
-            <HeadTitle title="Profile" />
+            <HeadTitle title="Profile" cart={true} />
 
             <div className="page-content">
                 <div className="container fb">

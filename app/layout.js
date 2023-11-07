@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
         {/* Meta */}
         <meta name="theme-color" content="#009688" />
         <meta name="author" content="VIYAGA" />
@@ -31,8 +32,16 @@ export default function RootLayout({ children }) {
           content="https://w3meat.dexignzone.com/xhtml/social-image.png"
         />
         <meta name="format-detection" content="telephone=no" />
+
         {/* PWA Version */}
         <link rel="manifest" href="/manifest.json" />
+
+        {/* <!-- Google Fonts --> */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+          />
       </head>
       <body className={inter.className} suppressHydrationWarning={true} >
 

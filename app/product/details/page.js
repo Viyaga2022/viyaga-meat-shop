@@ -5,8 +5,8 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <ProductHeader />
-    <ProductDetails />
+      <ProductHeader />
+      <ProductDetails />
     </>
   )
 }

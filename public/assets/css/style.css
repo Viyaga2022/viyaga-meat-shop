@@ -14029,7 +14029,6 @@ select {
     font-size: 16px;
     color: #7D8FAB; }
   .dz-form-select.style-2 {
-    background-image: url(http://localhost:3000/images/down.svg);
     background-color: transparent;
     border: 0;
     width: auto;

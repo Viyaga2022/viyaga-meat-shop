@@ -12,13 +12,13 @@ function Deals() {
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
                             <div className="card-item style-6">
-                                <a href="product-detail.html" className="dz-media">
+                                <a href="/product/details" className="dz-media">
                                     <Image src="/images/product/2.jpg" alt="image" height={400} width ={600}/>
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
                                     <h4 className="item-name">
-                                        <a href="product-detail.html">
+                                        <a href="/product/details">
                                             Fish + Fish Skinless + Cleaned Prawns
                                         </a>
                                     </h4>
@@ -35,7 +35,7 @@ function Deals() {
                                             </span>
                                         </div>
                                         <a
-                                            href="product-detail.html"
+                                            href="/product/details"
                                             className="btn btn-sm btn-outline-primary"
                                         >
                                             ADD
@@ -46,13 +46,13 @@ function Deals() {
                         </div>
                         <div className="swiper-slide">
                             <div className="card-item style-6">
-                                <a href="product-detail.html" className="dz-media">
+                                <a href="/product/details" className="dz-media">
                                     <Image src="/images/product/3.jpg" alt="image" height={400} width ={600} />
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
                                     <h4 className="item-name">
-                                        <a href="product-detail.html">Meat + Chicken Skinless + Fish</a>
+                                        <a href="/product/details">Meat + Chicken Skinless + Fish</a>
                                     </h4>
                                     <div className="offer-code">FLAT 50% off Code: 636GCP</div>
                                     <div className="footer-wrapper">
@@ -67,7 +67,7 @@ function Deals() {
                                             </span>
                                         </div>
                                         <a
-                                            href="product-detail.html"
+                                            href="/product/details"
                                             className="btn btn-sm btn-outline-primary"
                                         >
                                             ADD
@@ -78,13 +78,13 @@ function Deals() {
                         </div>
                         <div className="swiper-slide">
                             <div className="card-item style-6">
-                                <a href="product-detail.html" className="dz-media">
+                                <a href="/product/details" className="dz-media">
                                     <Image src="/images/product/1.jpg" alt="image" height={400} width ={600}/>
                                 </a>
                                 <div className="dz-content">
                                     <span className="product-title">Combo pack</span>
                                     <h4 className="item-name">
-                                        <a href="product-detail.html">
+                                        <a href="/product/details">
                                             Goat + Chicken Skinless + Cleaned Prawns
                                         </a>
                                     </h4>
@@ -101,7 +101,7 @@ function Deals() {
                                             </span>
                                         </div>
                                         <a
-                                            href="product-detail.html"
+                                            href="/product/details"
                                             className="btn btn-sm btn-outline-primary"
                                         >
                                             ADD

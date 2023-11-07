@@ -47,7 +47,7 @@ const MainProfile = () => {
                     <span>1234567890</span>
                 </div>
             </div>
-            <a href="edit-profile.html" className="edit-profile">
+            <a href="/profile/edit" className="edit-profile">
                 <i className="fa-regular fa-pen-to-square" />
             </a>
         </div>

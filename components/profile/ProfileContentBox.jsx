@@ -5,7 +5,7 @@ const ProfileContentBox = () => {
         <div className="content-box">
             <ul className="row">
                 <li className="col-4">
-                    <a href="order">
+                    <a href="/profile/orders">
                         <div className="icon-box-5 mb-2">
                             <svg
                                 width={20}
@@ -32,7 +32,7 @@ const ProfileContentBox = () => {
                     </a>
                 </li>
                 <li className="col-4">
-                    <a href="favorite">
+                    <a href="/profile/favorites">
                         <div className="icon-box-5 mb-2">
                             <svg
                                 width={19}

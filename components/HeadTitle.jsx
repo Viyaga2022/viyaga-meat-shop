@@ -44,7 +44,7 @@ function HeadTitle({ profile, title, cart }) {
                     <div className="header-content">
                         <div className="left-content">
                             {/* javascript:void(0) */}
-                            <a href="#;" className="back-btn">
+                            <a href="#" className="back-btn">
                                 <i className="fa-solid fa-arrow-left" />
                             </a>
                             {profile

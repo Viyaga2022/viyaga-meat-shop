@@ -7,7 +7,7 @@ function CategoriesContent() {
     <div className="container bottom-content">
       <div className="row catagore-bx g-4">
         <div className="col-4 text-center">
-          <a href="product-list.html">
+          <a href="/product/product-list">
             <div className="dz-media media-60">
               <Image src="/images/categore/1.png" alt="image" height={400} width ={400}/>
             </div>
