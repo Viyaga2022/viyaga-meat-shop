@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function SideBar() {
     return (
@@ -18,7 +19,7 @@ function SideBar() {
                 <ul className="nav navbar-nav">
                     <li className="nav-label">Main Menu</li>
                     <li>
-                        <a className="nav-link" href="index.html">
+                        <Link className="nav-link" href="/">
                             <span className="dz-icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +32,10 @@ function SideBar() {
                                 </svg>
                             </span>
                             <span>Home</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li>
-                        <a className="nav-link" href="ui-components.html">
+                    {/* <li>
+                        <Link className="nav-link" href="ui-components.html">
                             <span className="dz-icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +48,10 @@ function SideBar() {
                                 </svg>
                             </span>
                             <span>Components</span>
-                        </a>
-                    </li>
+                        </Link>
+                    </li> */}
                     <li>
-                        <a className="nav-link" href="account.html">
+                        <Link className="nav-link" href="/profile">
                             <span className="dz-icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +64,10 @@ function SideBar() {
                                 </svg>
                             </span>
                             <span>Profile</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="nav-link" href="chat.html">
+                        <Link className="nav-link" href="/chat">
                             <span className="dz-icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -80,10 +81,10 @@ function SideBar() {
                             </span>
                             <span>Chat</span>
                             <span className="badge badge-circle badge-info">5</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="nav-link" href="welcome.html">
+                        <Link className="nav-link" href="/welcome">
                             <span className="dz-icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +104,7 @@ function SideBar() {
                                 </svg>
                             </span>
                             <span>Logout</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-label">Settings</li>
                     <li
@@ -112,7 +113,7 @@ function SideBar() {
                         data-bs-target="#offcanvasBottom"
                         aria-controls="offcanvasBottom"
                     >
-                        <a href="#" className="nav-link">
+                        <Link href="#" className="nav-link">
                             <span className="dz-icon">
                                 <svg
                                     className="color-plate"
@@ -126,7 +127,7 @@ function SideBar() {
                                 </svg>
                             </span>
                             <span>Color Theme</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <div className="mode">

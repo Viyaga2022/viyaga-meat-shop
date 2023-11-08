@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 function CheckoutBtn() {
     return (
         <div className="footer fixed">
             <div className="container">
-                <a href="payment.html" className="payment-btn btn rounded-sm">
+                <Link href="/payment" className="payment-btn btn rounded-sm">
                     <div className="total-price">
                         <span>3 items</span>
                         <div className="mide-line" />
@@ -29,7 +30,7 @@ function CheckoutBtn() {
                             />
                         </svg>
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     )

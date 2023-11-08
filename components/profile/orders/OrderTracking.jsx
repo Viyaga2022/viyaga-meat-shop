@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const OrderTracking = () => {
@@ -57,9 +58,9 @@ const OrderTracking = () => {
                 <div className="footer fixed ">
                     <div className="container">
                         <div className="footer-btn d-flex align-items-center">
-                            <a href="order.html" className="btn btn-primary btn-block">
+                            <Link href="/profile/orders" className="btn btn-primary btn-block">
                                 CONFIRM DELIVERY
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

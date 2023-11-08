@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const OrderList = () => {
     return (
@@ -23,22 +24,22 @@ const OrderList = () => {
                                 </div>
                                 <div className="content flex-1">
                                     <h6 className="dz-title mb-1">
-                                        <a className="text-primary" href="product-detail.html">
+                                        <Link className="text-primary" href="/product/details">
                                             The Meat Shop
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <h6 className="dz-title font-12">
-                                        <a href="product-detail.html">
+                                        <Link href="/product/details">
                                             Fish + Fish Skinless + Cleaned Prawns
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <p className="mb-0">07 Items</p>
                                 </div>
                                 <div className="end-content">
                                     <span className="date">Jan 13</span>
-                                    <a href="cart.html" className="btn btn-primary light btn-block">
+                                    <Link href="cart.html" className="btn btn-primary light btn-block">
                                         Reorder
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </li>
@@ -62,20 +63,20 @@ const OrderList = () => {
                                 </div>
                                 <div className="content flex-1">
                                     <h6 className="dz-title mb-1">
-                                        <a className="text-primary" href="product-detail.html">
+                                        <Link className="text-primary" href="/product/details">
                                             Panny's Meat Corner
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <h6 className="dz-title font-12">
-                                        <a href="product-detail.html">Meat + Chicken Skinless + Fish</a>
+                                        <Link href="/product/details">Meat + Chicken Skinless + Fish</Link>
                                     </h6>
                                     <p className="mb-0">05 Items</p>
                                 </div>
                                 <div className="end-content">
                                     <span className="date">Jan 10</span>
-                                    <a href="cart.html" className="btn btn-primary light btn-block">
+                                    <Link href="cart.html" className="btn btn-primary light btn-block">
                                         Reorder
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </li>
@@ -92,20 +93,20 @@ const OrderList = () => {
                                 </div>
                                 <div className="content flex-1">
                                     <h6 className="dz-title mb-1">
-                                        <a className="text-primary" href="product-detail.html">
+                                        <Link className="text-primary" href="/product/details">
                                             Nonveg Hub
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <h6 className="dz-title font-12">
-                                        <a href="product-detail.html">Goat Meat + Cleaned Prawns</a>
+                                        <Link href="/product/details">Goat Meat + Cleaned Prawns</Link>
                                     </h6>
                                     <p className="mb-0">12 Items</p>
                                 </div>
                                 <div className="end-content">
                                     <span className="date">Jan 07</span>
-                                    <a href="cart.html" className="btn btn-primary light btn-block">
+                                    <Link href="cart.html" className="btn btn-primary light btn-block">
                                         Reorder
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </li>
@@ -122,22 +123,22 @@ const OrderList = () => {
                                 </div>
                                 <div className="content flex-1">
                                     <h6 className="dz-title mb-1">
-                                        <a className="text-primary" href="product-detail.html">
+                                        <Link className="text-primary" href="/product/details">
                                             Meat Garage
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <h6 className="dz-title font-12">
-                                        <a href="product-detail.html">
+                                        <Link href="/product/details">
                                             Chicken Skinless + Cleaned Prawns
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <p className="mb-0">06 Items</p>
                                 </div>
                                 <div className="end-content">
                                     <span className="date">Jan 02</span>
-                                    <a href="cart.html" className="btn btn-primary light btn-block">
+                                    <Link href="cart.html" className="btn btn-primary light btn-block">
                                         Reorder
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </li>
@@ -146,9 +147,9 @@ const OrderList = () => {
             </div>
             <div className="footer fixed">
                 <div className="container">
-                    <a href="index.html" className="btn btn-primary btn-block">
+                    <Link href="/" className="btn btn-primary btn-block">
                         Search More Products
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

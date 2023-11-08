@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Payment = () => {
     return (
@@ -406,9 +407,9 @@ const Payment = () => {
             {/* FOOTER */}
             <div className="footer fixed">
                 <div className="container">
-                    <a href="tracking-order.html" className="btn btn-primary btn-block">
+                    <Link href="/profile/orders/order-tracking" className="btn btn-primary btn-block">
                         MAKE PAYMENT
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

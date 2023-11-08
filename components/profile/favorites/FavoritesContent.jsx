@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function FavoritesContent() {
     return (
@@ -8,7 +9,7 @@ function FavoritesContent() {
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="cart.html">Goat + Chicken Skinless + Cleaned Prawns</a>
+                            <Link href="/product/cart">Goat + Chicken Skinless + Cleaned Prawns</Link>
                         </h4>
                         <div className="offer-code">FLAT 60% off Code: 636GCP</div>
                         <div className="price-wrapper">
@@ -26,7 +27,7 @@ function FavoritesContent() {
                         </div>
                     </div>
                     <div className="text-end">
-                        <a href="cart.html" className="dz-media media-100">
+                        <Link href="/product/cart" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/1.jpg"
@@ -34,19 +35,19 @@ function FavoritesContent() {
                                 height={400} 
                                 width ={600}
                             />
-                        </a>
-                        <a
-                            href="cart.html"
+                        </Link>
+                        <Link
+                            href="/product/cart"
                             className="btn btn-sm btn-block btn-outline-primary"
                         >
                             ADD
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="cart.html">Fish + Fish Skinless + Cleaned Prawns</a>
+                            <Link href="/product/cart">Fish + Fish Skinless + Cleaned Prawns</Link>
                         </h4>
                         <div className="offer-code">FLAT 60% off Code: 636GCP</div>
                         <div className="price-wrapper">
@@ -65,7 +66,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/2.jpg"
@@ -73,19 +74,19 @@ function FavoritesContent() {
                                 height={400} 
                                 width ={600}
                             />
-                        </a>
-                        <a
-                            href="cart.html"
+                        </Link>
+                        <Link
+                            href="/product/cart"
                             className="btn btn-sm btn-block btn-outline-primary"
                         >
                             ADD
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="cart.html">Meat + Chicken Skinless + Fish</a>
+                            <Link href="/product/cart">Meat + Chicken Skinless + Fish</Link>
                         </h4>
                         <div className="offer-code">FLAT 60% off Code: 636GCP</div>
                         <div className="price-wrapper">
@@ -104,7 +105,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/3.jpg"
@@ -112,19 +113,19 @@ function FavoritesContent() {
                                 height={400} 
                                 width ={600}
                             />
-                        </a>
-                        <a
-                            href="cart.html"
+                        </Link>
+                        <Link
+                            href="/product/cart"
                             className="btn btn-sm btn-block btn-outline-primary"
                         >
                             ADD
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="cart.html">Chicken Skinless</a>
+                            <Link href="/product/cart">Chicken Skinless</Link>
                         </h4>
                         <div className="offer-code">FLAT 60% off Code: 636GCP</div>
                         <div className="price-wrapper">
@@ -143,7 +144,7 @@ function FavoritesContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/4.jpg"
@@ -151,13 +152,13 @@ function FavoritesContent() {
                                 height={400} 
                                 width ={600}
                             />
-                        </a>
-                        <a
-                            href="cart.html"
+                        </Link>
+                        <Link
+                            href="/product/cart"
                             className="btn btn-sm btn-block btn-outline-primary"
                         >
                             ADD
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

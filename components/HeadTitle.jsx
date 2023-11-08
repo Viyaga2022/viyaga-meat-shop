@@ -1,8 +1,13 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
 const CartIcon = () => {
     return (
-        <a href="cart" className="notify-cart2">
+        <Link href="/product/cart" className="notify-cart2">
             <svg
                 className="text-dark"
                 width={24}
@@ -32,11 +37,13 @@ const CartIcon = () => {
                 </defs>
             </svg>
             <span className="badge badge-danger">3</span>
-        </a>
+        </Link>
     )
 }
 
 function HeadTitle({ profile, title, cart }) {
+    const router = useRouter()
+
     return (
         <header className="header">
             <div className="main-bar">
@@ -44,9 +51,9 @@ function HeadTitle({ profile, title, cart }) {
                     <div className="header-content">
                         <div className="left-content">
                             {/* javascript:void(0) */}
-                            <a href="#" className="back-btn">
+                            <Link href="#" onClick={() => router.back() } className="back-btn">
                                 <i className="fa-solid fa-arrow-left" />
-                            </a>
+                            </Link>
                             {profile
                                 ? (<div className="media me-3 media-35 rounded-circle">
                                     <Image src="/images/avatar/4.jpg" alt="shop-name" width={100} height={100} />

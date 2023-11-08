@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const LoginContent = () => {
@@ -83,13 +84,13 @@ const LoginContent = () => {
             </div>
             <footer className="footer fixed">
                 <div className="container">
-                    <a href="index.html" className="btn mb-3 btn-primary w-100">
+                    <Link href="/" className="btn mb-3 btn-primary w-100">
                         SIGN IN
-                    </a>
+                    </Link>
                     <div className="text-center text-primary">
-                        <a href="register.html" className="text-secondary font-w600">
+                        <Link href="/account/register" className="text-secondary font-w600">
                             Register for Free
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </footer>

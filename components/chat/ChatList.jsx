@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ChatList = () => {
     return (
@@ -27,7 +28,7 @@ const ChatList = () => {
                     </form>
                     <ul className="dz-list message-list">
                         <li>
-                            <a href="messages-detail.html">
+                            <Link href="/chat/message">
                                 <div className="media media-50">
                                     <Image
                                         className="rounded"
@@ -62,10 +63,10 @@ const ChatList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="messages-detail.html">
+                            <Link href="/chat/message">
                                 <div className="media media-50">
                                     <Image
                                         className="rounded"
@@ -100,10 +101,10 @@ const ChatList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="messages-detail.html">
+                            <Link href="/chat/message">
                                 <div className="media media-50">
                                     <Image
                                         className="rounded"
@@ -136,10 +137,10 @@ const ChatList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="messages-detail.html">
+                            <Link href="/chat/message">
                                 <div className="media media-50">
                                     <Image
                                         className="rounded"
@@ -172,10 +173,10 @@ const ChatList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="messages-detail.html">
+                            <Link href="/chat/message">
                                 <div className="media media-50">
                                     <Image
                                         className="rounded"
@@ -208,7 +209,7 @@ const ChatList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

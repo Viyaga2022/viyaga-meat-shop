@@ -9,15 +9,10 @@ import Head from 'next/head'
 const page = () => {
     return (
         <>
-            <Head>
-                {/* Animte  */}
-                <link rel="stylesheet" href="/assets/vendor/wow/css/libs/animate.css" />
-            </Head>
             <div className="page-wraper">
                 <SplashImage />
                 <Welcome />
             </div>
-
         </>
     )
 }

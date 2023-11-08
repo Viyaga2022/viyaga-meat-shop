@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function CartContent() {
     return (
@@ -11,9 +12,9 @@ function CartContent() {
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="product-detail.html">
+                            <Link href="/product/details">
                                 Goat + Chicken Skinless + Cleaned Prawns
-                            </a>
+                            </Link>
                         </h4>
                         <div className="price-wrapper">
                             <h6 className="current-price">
@@ -31,7 +32,7 @@ function CartContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/1.jpg"
@@ -39,7 +40,7 @@ function CartContent() {
                                 height={400}
                                 width ={600}
                             />
-                        </a>
+                        </Link>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">
                             <input
                                 readOnly=""
@@ -57,9 +58,9 @@ function CartContent() {
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="product-detail.html">
+                            <Link href="/product/details">
                                 Fish + Fish Skinless + Cleaned Prawns
-                            </a>
+                            </Link>
                         </h4>
                         <div className="price-wrapper">
                             <h6 className="current-price">
@@ -77,7 +78,7 @@ function CartContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/2.jpg"
@@ -85,7 +86,7 @@ function CartContent() {
                                 height={400}
                                 width ={600}
                             />
-                        </a>
+                        </Link>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">
                             <input
                                 readOnly=""
@@ -103,7 +104,7 @@ function CartContent() {
                 <div className="product-list">
                     <div className="dz-content">
                         <h4 className="item-name">
-                            <a href="product-detail.html">Meat + Chicken Skinless + Fish</a>
+                            <Link href="/product/details">Meat + Chicken Skinless + Fish</Link>
                         </h4>
                         <div className="price-wrapper">
                             <h6 className="current-price">
@@ -121,7 +122,7 @@ function CartContent() {
                     </div>
                     <div className="text-end">
                         {/* javascript:void(0); */}
-                        <a href="#" className="dz-media media-100">
+                        <Link href="#" className="dz-media media-100">
                             <Image
                                 className="rounded-sm"
                                 src="/images/product/3.jpg"
@@ -129,7 +130,7 @@ function CartContent() {
                                 height={400}
                                 width ={600}
                             />
-                        </a>
+                        </Link>
                         <div className="dz-stepper style-5 border-1 rounded-stepper">
                             <input
                                 readOnly=""

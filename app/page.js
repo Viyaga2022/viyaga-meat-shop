@@ -5,6 +5,8 @@ import Offers from '@/components/home/Offers'
 import Deals from '@/components/home/Deals'
 import OnTrend from '@/components/home/OnTrend'
 import BottomTab from '@/components/BottomTab'
+import ThemeColor from '@/components/home/ThemeColor'
+import Script from 'next/script'
 
 export default function Home() {
     return (
@@ -20,6 +22,8 @@ export default function Home() {
                 </div>
             </div>
             <BottomTab home="active" />
+            <ThemeColor />
+            <Script src='/assets/js/index.js' strategy="lazyOnload" />
         </>
     )
 }
