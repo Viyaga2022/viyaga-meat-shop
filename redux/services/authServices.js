@@ -1,9 +1,7 @@
-import { API_URL } from '@env'
 import { createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const BASE_URL = API_URL + '/user'
+const BASE_URL =  'http://localhost:3001/api' + '/user'
 
 // Register Service
 const register = createAsyncThunk(
@@ -23,12 +21,15 @@ const register = createAsyncThunk(
 const login = createAsyncThunk(
     'auth/login',
     async (loginData, thunkAPI) => {
+        console.log(" send login request");
         try {
             const response = await axios.post(`${BASE_URL}/login`, loginData)
+            console.log(response.data);
             return response.data
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message)
                 || error.message || error.toString()
+                console.log(error.response.data);
             return thunkAPI.rejectWithValue(message)
         }
     }
@@ -61,12 +62,12 @@ const setAxiosHeader = (token) => {
 
 // Store Auth Token
 const storeAuthToken = async (token) => {
-    await AsyncStorage.setItem('auth', token)
+    localStorage.setItem('auth', token)
 }
 
 // Delete Auth Token
 const deleteAuthToken = async () => {
-    await AsyncStorage.setItem('auth', '')
+    localStorage.setItem('auth', '')
 }
 
 export { register, login, getUserAccount, setAxiosHeader, storeAuthToken, deleteAuthToken }

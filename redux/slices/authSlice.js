@@ -3,9 +3,9 @@ import { register, login, getUserAccount, storeAuthToken, deleteAuthToken } from
 
 const initialState = {
     currentUser: null,
-    userLoding: false,
+    userLoading: false,
     userErrorMsg: null,
-    isLoding: false,
+    isLoading: false,
     loginSuccessMsg: null,
     loginErrorMsg: null,
     registerSuccessMsg: null,
@@ -17,9 +17,9 @@ const authSlice = createSlice({
     initialState,
     reducers: {
         reset: (state) => {
-            state.userLoding = false
+            state.userLoading = false
             state.userErrorMsg = null
-            state.isLoding = false
+            state.isLoading = false
             state.loginSuccessMsg = null
             state.loginErrorMsg = null
             state.registerSuccessMsg = null
@@ -29,9 +29,9 @@ const authSlice = createSlice({
             deleteAuthToken()
             state = {
                 currentUser: null,
-                userLoding: false,
+                userLoading: false,
                 userErrorMsg: null,
-                isLoding: false,
+                isLoading: false,
                 loginSuccessMsg: null,
                 loginErrorMsg: null,
                 registerSuccessMsg: null,
@@ -43,41 +43,41 @@ const authSlice = createSlice({
         builder
             // register
             .addCase(register.pending, (state) => {
-                state.isLoding = true
+                state.isLoading = true
             })
             .addCase(register.fulfilled, (state, action) => {
-                state.isLoding = false
+                state.isLoading = false
                 state.registerSuccessMsg = action.payload.message
             })
             .addCase(register.rejected, (state, action) => {
-                state.isLoding = false
+                state.isLoading = false
                 state.registerErrorMsg = action.payload
             })
 
             // Login
             .addCase(login.pending, (state) => {
-                state.isLoding = true
+                state.isLoading = true
             })
             .addCase(login.fulfilled, (state, action) => {
-                state.isLoding = false
+                state.isLoading = false
                 state.loginSuccessMsg = action.payload.message
                 storeAuthToken(action.payload.token)
             })
             .addCase(login.rejected, (state, action) => {
-                state.isLoding = false
+                state.isLoading = false
                 state.loginErrorMsg = action.payload
             })
 
             //get User Account
             .addCase(getUserAccount.pending, (state) => {
-                state.userLoding = true
+                state.userLoading = true
             })
             .addCase(getUserAccount.fulfilled, (state, action) => {
-                state.userLoding = false
+                state.userLoading = false
                 state.currentUser = action.payload.user
             })
             .addCase(getUserAccount.rejected, (state, action) => {
-                state.userLoding = false
+                state.userLoading = false
                 state.userErrorMsg = action.payload
             })
     }

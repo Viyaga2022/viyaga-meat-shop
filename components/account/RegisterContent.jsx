@@ -1,6 +1,55 @@
-import React from 'react'
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import PreLoader from '../PreLoader';
+import toast from 'react-hot-toast';
+import { register, reset } from '@/redux/slices/authSlice';
+import { useRouter } from 'next/navigation';
 
 const RegisterContent = () => {
+    const [formData, setFormData] = useState({})
+    const [checkboxChecked, setCheckboxChecked] = useState(false)
+
+    const dispatch = useDispatch()
+    const router = useRouter()
+    const { registerSuccessMsg, registerErrorMsg, isLoading } = useSelector((state) => state.auth)
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleRegister = (e) => {
+        e.preventDefault()
+        const { name, email, password } = formData
+
+        if (!name, !email, !password) {
+            toast.error('Please Enter the required field')
+        } else if (!checkboxChecked) {
+            toast.error('Please Accept our terms and conditions')
+        }
+        else {
+            dispatch(register(formData))  
+        }
+    }
+
+    useEffect(() => {
+        if (registerErrorMsg) {
+            toast.error(registerErrorMsg)
+        }
+
+        if (registerSuccessMsg) {
+            toast.success(registerSuccessMsg)
+            setTimeout(() => {
+                router.push('/account/login')
+            },2000)
+        }
+
+        dispatch(reset())
+    }, [registerErrorMsg, registerSuccessMsg])
+
     return (
         <>
             <div className="page-content">
@@ -36,7 +85,7 @@ const RegisterContent = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <input type="text" className="form-control" placeholder="Name" />
+                                    <input type="text" name='name' onChange={handleChange} className="form-control" placeholder="Name" />
                                 </div>
                                 <div className="mb-3 input-group input-group-icon">
                                     <div className="input-group-text">
@@ -59,7 +108,7 @@ const RegisterContent = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <input type="email" className="form-control" placeholder="Email" />
+                                    <input type="email" name='email' onChange={handleChange} className="form-control" placeholder="Email" />
                                 </div>
                                 <div className="mb-3 input-group input-group-icon">
                                     <div className="input-group-text">
@@ -80,8 +129,10 @@ const RegisterContent = () => {
                                     </div>
                                     <input
                                         type="password"
+                                        name='password'
                                         className="form-control dz-password"
                                         placeholder="Password"
+                                        onChange={handleChange}
                                     />
                                     <span className="input-group-text show-pass">
                                         <i className="fa fa-eye-slash text-primary" />
@@ -92,11 +143,12 @@ const RegisterContent = () => {
                                     <input
                                         className="form-check-input"
                                         type="checkbox"
+                                        onClick={() => setCheckboxChecked(!checkboxChecked)}
                                         defaultValue=""
                                         id="flexCheckChecked"
                                     />
                                     <label className="form-check-label" htmlFor="flexCheckChecked">
-                                        By tapping “Sign Up” <br /> you accept our terms and Condition
+                                        Accept our terms and Condition
                                     </label>
                                 </div>
                             </form>
@@ -106,14 +158,13 @@ const RegisterContent = () => {
             </div>
             <footer className="footer fixed">
                 <div className="container">
-                    <a href="change-password" className="btn mb-3 btn-primary w-100">
-                        REGISTER
-                    </a>
+                    <button type='submit' onClick={handleRegister} className="btn mb-3 btn-primary w-100">
+                        {isLoading?'Loading...':' REGISTER'}
+                    </button>
                     <div className="text-center text-primary">
-                        <span>Already have an account ?</span>
-                        <a href="login" className="text-secondary font-w600">
-                            Log in
-                        </a>
+                        <Link href="/account/login" className="text-secondary font-w600">
+                            Already have an account ? Log in
+                        </Link>
                     </div>
                 </div>
             </footer>

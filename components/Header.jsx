@@ -1,6 +1,48 @@
-import React from 'react'
+"use client"
+
+
+import { getUserAccount, logout, reset } from '@/redux/slices/authSlice'
+import { useRouter } from 'next/navigation'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import PreLoader from './PreLoader'
+import toast from 'react-hot-toast'
+import { toggleSidebar } from '@/redux/slices/commonSlice'
 
 function Header() {
+    const dispatch = useDispatch()
+    const router = useRouter()
+    const { currentUser, userLoading, userErrorMsg } = useSelector((state) => state.auth)
+
+    //const token = localStorage.getItem('auth')
+    //console.log({token});
+
+    useEffect(() => {
+
+        if (!currentUser) {
+            const token = localStorage.getItem('auth')
+            console.log(token);
+            if (!token) {
+                //return router.replace('/accoun/login')
+            }
+            //dispatch(getUserAccount(token))
+        }
+        console.log({currentUser});
+        if (userErrorMsg) {
+            toast.error(userErrorMsg)
+            setTimeout(() => {
+                //dispatch(logout())
+            }, 2000)
+        }
+
+        dispatch(reset())
+
+    }, [userErrorMsg, currentUser, dispatch])
+
+    if (userLoading) {
+        return <PreLoader />
+    }
+
     return (
         <header className="header style-4 bg-img header-fixed">
             <div className="container">
@@ -21,11 +63,11 @@ function Header() {
                             <p>Rkpuram sector-b near chawla circle....</p>
                         </div>
                         {/* javascript:void(0); */}
-                        <a href="#" className="menu-toggler icon-box-2">
+                        <div className="menu-toggler icon-box-2" onClick={() => dispatch(toggleSidebar())} >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.001 297.001">
                                 <path d="M107.883 0h-85.27C10.144 0 .001 10.143.001 22.612v85.27c0 12.469 10.143 22.612 22.612 22.612h85.27c12.469 0 22.612-10.143 22.612-22.612v-85.27C130.493 10.143 120.352 0 107.883 0zm166.505 0h-85.27c-12.469 0-22.612 10.143-22.612 22.612v85.27c0 12.469 10.143 22.612 22.612 22.612h85.27c12.469 0 22.612-10.143 22.612-22.612v-85.27C297 10.143 286.857 0 274.388 0zM107.883 166.507h-85.27c-12.469 0-22.612 10.142-22.612 22.611v85.27C.001 286.857 10.144 297 22.613 297h85.27c12.469 0 22.612-10.143 22.612-22.612v-85.27c-.002-12.469-10.143-22.611-22.612-22.611zm166.505 0h-85.27c-12.469 0-22.612 10.143-22.612 22.612v85.27c0 12.469 10.143 22.612 22.612 22.612h85.27C286.857 297 297 286.857 297 274.388v-85.27c0-12.469-10.143-22.611-22.612-22.611z" />
                             </svg>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div className="search-box style-1">

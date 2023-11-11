@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ForgotPassword = () => {
     return (
@@ -52,14 +53,14 @@ const ForgotPassword = () => {
             {/* Footer */}
             <footer className="footer fixed">
                 <div className="container">
-                    <a href="otp-confirm.html" className="btn mb-3 btn-primary w-100">
+                    <Link href="/account/otp-confirmation" className="btn mb-3 btn-primary w-100">
                         SEND CODE
-                    </a>
+                    </Link>
                     <div className="text-center text-primary">
                         <span>Back to</span>
-                        <a href="login.html" className="text-secondary font-w600">
+                        <Link href="/account/login" className="text-secondary font-w600">
                             Login
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </footer>

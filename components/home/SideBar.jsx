@@ -1,12 +1,20 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleSidebar } from '@/redux/slices/commonSlice'
 
 function SideBar() {
+    const { isSidebarOpen } = useSelector((state) => state.common)
+    const dispatch = useDispatch()
+    console.log({SideBar: isSidebarOpen});
+
     return (
         <>
-            <div className="dark-overlay" />
-            <div className="sidebar">
+            <div className={`dark-overlay ${isSidebarOpen? 'active': null}`} onClick={() => dispatch(toggleSidebar())}/>
+            <div className={`sidebar ${isSidebarOpen? 'show': null}`}>
                 <div className="author-box">
                     <div className="dz-media">
                         <Image src="/images/avatar/5.jpg" alt="author-image" height={150} width ={150} />

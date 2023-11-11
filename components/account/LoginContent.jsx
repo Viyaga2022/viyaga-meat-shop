@@ -1,7 +1,50 @@
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useRouter } from 'next/navigation'
+import { login, reset } from '@/redux/slices/authSlice'
+import toast from 'react-hot-toast'
+import PreLoader from '../PreLoader'
 
 const LoginContent = () => {
+    const [formData, setFormData] = useState({})
+    const dispatch = useDispatch()
+    const router = useRouter()
+    const { isLoading, loginSuccessMsg, loginErrorMsg } = useSelector((state) => state.auth)
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        })
+    }
+
+    const handleSignIn = (e) => {
+        e.preventDefault()
+        const { email, password } = formData
+
+        if (!email || !password) {
+            toast.error('Please Enter the required Field')
+        } else {
+         dispatch(login(formData))
+        }
+    }
+
+    useEffect(() => {
+        if(loginErrorMsg) {
+            toast.error(loginErrorMsg)
+        }
+
+        if(loginSuccessMsg) {
+            toast.success(loginSuccessMsg)
+            setTimeout(() => {
+                router.replace('/')
+            }, 2000)
+        }
+
+        dispatch(reset())
+    }, [loginSuccessMsg, loginErrorMsg])
+
     return (
         <>
             <div className="page-content">
@@ -37,7 +80,12 @@ const LoginContent = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <input type="text" className="form-control" placeholder="Name" />
+                                    <input
+                                        type="text"
+                                        name='email'
+                                        className="form-control"
+                                        placeholder="Enter Your Email"
+                                        onChange={handleChange} />
                                 </div>
                                 <div className="mb-3 input-group input-group-icon">
                                     <div className="input-group-text">
@@ -58,8 +106,10 @@ const LoginContent = () => {
                                     </div>
                                     <input
                                         type="password"
+                                        name='password'
                                         className="form-control dz-password"
                                         placeholder="Password"
+                                        onChange={handleChange}
                                     />
                                     <span className="input-group-text show-pass">
                                         <i className="fa fa-eye-slash text-primary" />
@@ -67,16 +117,16 @@ const LoginContent = () => {
                                     </span>
                                 </div>
                                 <div className="d-flex justify-content-between align-items-center mb-4">
-                                    <a href="forgot-password.html" className="btn-link">
+                                    <Link href="/account/forgot-password" className="btn-link">
                                         Forgot password?
-                                    </a>
-                                    <a href="forgot-password.html" className="btn-link">
+                                    </Link>
+                                    <Link href="/account/change-password" className="btn-link">
                                         Reset here
-                                    </a>
+                                    </Link>
                                 </div>
-                                <a href="register" className="btn-link text-center">
+                                <Link href="/account/register" className="btn-link text-center">
                                     Don&apos;t have an account?
-                                </a>
+                                </Link>
                             </form>
                         </div>
                     </div>
@@ -84,9 +134,9 @@ const LoginContent = () => {
             </div>
             <footer className="footer fixed">
                 <div className="container">
-                    <Link href="/" className="btn mb-3 btn-primary w-100">
-                        SIGN IN
-                    </Link>
+                    <button type="submit" className="btn mb-3 btn-primary w-100" onClick={handleSignIn}>
+                        {isLoading?'Loading...':'SIGN IN'}
+                    </button>
                     <div className="text-center text-primary">
                         <Link href="/account/register" className="text-secondary font-w600">
                             Register for Free

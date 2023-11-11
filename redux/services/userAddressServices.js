@@ -1,8 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"
-import { API_URL } from '@env'
 import axios from "axios"
 
-const BASE_URL = API_URL + '/userAddress'
+const BASE_URL = process.env.API_URL + '/userAddress'
 
 const getAllAddressesOfUser = createAsyncThunk(
     'userAddress/getAll',

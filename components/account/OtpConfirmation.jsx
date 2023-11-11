@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const OtpConfirmation = () => {
     return (
@@ -70,7 +71,7 @@ const OtpConfirmation = () => {
             <footer className="footer fixed">
                 <div className="container">
                     <div className="seprate-box mb-3">
-                        <a href="forgot-password.html" className="back-btn">
+                        <Link href="/account/forgot-password" className="back-btn">
                             <svg
                                 width={10}
                                 height={16}
@@ -85,16 +86,16 @@ const OtpConfirmation = () => {
                                     fill="white"
                                 />
                             </svg>
-                        </a>
-                        <a href="change-password.html" className="btn btn-primary btn-block">
+                        </Link>
+                        <Link href="/account/change-password" className="btn btn-primary btn-block">
                             SUBMIT
-                        </a>
+                        </Link>
                     </div>
                     <div className="text-center text-primary">
                         <span>Back to</span>
-                        <a href="login.html" className="text-secondary font-w600">
+                        <Link href="/account/login" className="text-secondary font-w600">
                             Login
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </footer>

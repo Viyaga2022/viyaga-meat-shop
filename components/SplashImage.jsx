@@ -1,6 +1,8 @@
+"use client"
+
+
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import Script from 'next/script'
 
 const Splash = ({ routePath, time }) => {
     const [fade, setFade] = useState('')
@@ -92,8 +94,6 @@ const Splash = ({ routePath, time }) => {
                     </div>
                 </div>
             </div>
-            <Script src='/assets/vendor/wow/dist/wow.min.js' />
-            <Script src="/assets/js/welcome.js"></Script>
         </>
     )
 }

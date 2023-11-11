@@ -7,6 +7,8 @@ import OnTrend from '@/components/home/OnTrend'
 import BottomTab from '@/components/BottomTab'
 import ThemeColor from '@/components/home/ThemeColor'
 import Script from 'next/script'
+import JsAndCss from '@/components/JsAndCss'
+
 
 export default function Home() {
     return (
@@ -23,7 +25,6 @@ export default function Home() {
             </div>
             <BottomTab home="active" />
             <ThemeColor />
-            <Script src='/assets/js/index.js' strategy="lazyOnload" />
         </>
     )
 }

@@ -1,3 +1,6 @@
+"use client"
+
+
 import RegisterContent from '@/components/account/RegisterContent'
 import React from 'react'
 
