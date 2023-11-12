@@ -20,6 +20,7 @@ export default function Home() {
                     <OnTrend />
                 </div>
             </div>
+            <div style={{ height: 40 }} />
             <BottomTab home="active" />
             <ThemeColor />
         </>

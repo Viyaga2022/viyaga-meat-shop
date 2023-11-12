@@ -8,7 +8,6 @@ import '../public/assets/css/style.css'
 import '../public/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css'
 import '../public/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css'
 import '../public/assets/vendor/swiper/swiper-bundle.min.css'
-import JsAndCss from '@/components/JsAndCss'
 
 const inter = Inter({ subsets: ['latin'] })
 

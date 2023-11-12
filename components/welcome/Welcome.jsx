@@ -2,9 +2,17 @@
 
 
 import Link from 'next/link'
+import { Autoplay, Pagination, Parallax } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination';
 
 const Welcome = () => {
-   
+    const welcome = [
+        { id: 1, title: 'Welcome to Meat Shop Application', description: 'Revolutionize mobile meat shopping with our template' },
+        { id: 2, title: 'Welcome to Meat Shop Application', description: 'Revolutionize mobile meat shopping with our template' },
+        { id: 3, title: 'Welcome to Meat Shop Application', description: 'Revolutionize mobile meat shopping with our template' },
+    ]
     return (
         <>
             <div className="content-body">
@@ -13,42 +21,29 @@ const Welcome = () => {
                     style={{ backgroundImage: 'url("/images/onboarding/bg.jpg")' }}
                 >
                     <div className="welcome-inner">
-                        <div className="swiper get-started">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <div className="slide-info">
-                                        <div className="started">
-                                            <h3 className="title font-w700">
-                                                Welcome to Meat Shop Application
-                                            </h3>
-                                            <p>Revolutionize mobile meat shopping with our template</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="slide-info">
-                                        <div className="started">
-                                            <h3 className="title font-w700">
-                                                Your Ultimate Meat Shop Destination
-                                            </h3>
-                                            <p>Transform your meat shop with our innovative template.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="slide-info">
-                                        <div className="started">
-                                            <h3 className="title font-w700">
-                                                Step into Our Shop of Quality Meats
-                                            </h3>
-                                            <p>Your Trusted Source for Quality Meats Application</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-btn">
-                                <div className="swiper-pagination style-1 flex-1" />
-                            </div>
+                        <div className="get-started">
+                            <Swiper
+                                modules={[Pagination, Autoplay, Parallax]}
+                                parallax={true}
+                                slidesPerView={1}
+                                spaceBetween={15}
+                                pagination={{ clickable: true }}
+                                autoplay={{ delay: 2000 }}
+                                loop={false}
+                            >
+                                {welcome.map((data) => {
+                                    return (
+                                        <SwiperSlide style={{ width: 'auto' }} key={data.id}>
+                                            <div className="slide-info">
+                                                <h3 className="title font-w700">
+                                                    {data.title}
+                                                </h3>
+                                                <p>{data.description}</p>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })}
+                            </Swiper>
                         </div>
                     </div>
                     <div className="bottom-btn container">

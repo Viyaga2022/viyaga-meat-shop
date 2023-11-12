@@ -12,11 +12,13 @@ const Deals = () => {
     useEffect(() => {
         setDeals([
             { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
-            { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
-            { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
-            { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
-            { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
-            { id: 1, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 2, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 3, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 4, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 5, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 6, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 7, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
+            { id: 8, image: '/images/product/2.jpg', title: 'Combo pack', name: 'Fish + Fish Skinless + Cleaned Prawns', offer: 'FLAT 40% off Code: 636G8P', currentPrice: 830, oldPrice: 1000 },
         ])
     })
 

@@ -27472,6 +27472,7 @@ button:focus {
 .welcome-area .get-started {
   text-align: center;
   margin-top: auto;
+  margin-bottom: 100px;
   flex: 1;
   width: 100%;
 }
@@ -27511,7 +27512,7 @@ button:focus {
 }
 
 .welcome-area .slide-info {
-  padding: 0 15px 135px;
+  margin: 0 15px 35px;
 }
 
 @keyframes scroll {
