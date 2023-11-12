@@ -18788,11 +18788,11 @@ section {
   box-shadow: 0px 18px 24px rgba(16, 30, 44, 0.4);
 }
 
-.theme-dark.body-bg {
-  /* .purchase-card{
+ /* .theme-dark.body-bg {
+ purchase-card{
 			background-color: #425176;
-		} */
-}
+		} 
+} */
 
 .theme-dark.body-bg .title-head {
   color: #fff !important;
@@ -28326,7 +28326,7 @@ button:focus {
   margin-left: 16px;
 }
 
-.ssc .mbs {
+/* .ssc .mbs {
   margin-bottom: calc($skeleton-margin-standart / 2);
 }
 
@@ -28340,7 +28340,7 @@ button:focus {
 
 .ssc .mls {
   margin-left: calc($skeleton-margin-standart / 2);
-}
+} */
 
 .ssc .w-10 {
   width: 10%;
@@ -28477,7 +28477,7 @@ button:focus {
 .ssc-head-line {
   border-radius: 15px;
   width: 100%;
-  height: calc($skeleton-line-height * 2);
+  /* height: calc($skeleton-line-height * 2); */
 }
 
 .ssc-square {

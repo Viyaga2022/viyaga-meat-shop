@@ -6,9 +6,6 @@ import Image from 'next/image';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-import 'swiper/css';
-
 import { useEffect, useState } from 'react';
 
 const Offers = () => {
@@ -16,22 +13,14 @@ const Offers = () => {
 
     useEffect(() => {
         setOfferSliders([
-            {
-                id: 1,
-                image: "/images/banner/banner2.jpg"
-            },
-            {
-                id: 2,
-                image: "/images/banner/banner2.jpg"
-            },
-            {
-                id: 3,
-                image: "/images/banner/banner2.jpg"
-            },
-            {
-                id: 4,
-                image: "/images/banner/banner2.jpg"
-            },
+            { id: 1, image: "/images/banner/banner2.jpg" },
+            { id: 2, image: "/images/banner/banner2.jpg" },
+            { id: 3, image: "/images/banner/banner2.jpg" },
+            { id: 4, image: "/images/banner/banner2.jpg" },
+            { id: 5, image: "/images/banner/banner2.jpg" },
+            { id: 6, image: "/images/banner/banner2.jpg" },
+            { id: 7, image: "/images/banner/banner2.jpg" },
+            { id: 8, image: "/images/banner/banner2.jpg" },
         ])
     }, [])
     return (
@@ -43,16 +32,14 @@ const Offers = () => {
                 // install Swiper modules
                 modules={[Autoplay]}
                 spaceBetween={15}
-                slidesPerView={1.15}
-                autoplay={{ delay: 5000 }}
+                slidesPerView='auto'
+                autoplay={{ delay: 4000 }}
             >
                 {offerSliders.map((slide) => {
                     return (
-                        <SwiperSlide key={slide.id}>
-                            <div className="swiper-slide">
-                                <div className="card add-banner2">
-                                    <Image src={slide.image} alt="/" height={250} width={350} />
-                                </div>
+                        <SwiperSlide style={{width:'auto'}} key={slide.id}>
+                            <div style={{}} >
+                                <Image style={{borderRadius:10}} src={slide.image} alt="/" height={197} width={350} />
                             </div>
                         </SwiperSlide>
                     )
